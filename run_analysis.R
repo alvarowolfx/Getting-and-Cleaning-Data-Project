@@ -100,8 +100,8 @@ generateSumarizationBySubjectAndActivity <- function(dataset){
   sumarizedData
 }
 
-#fullData <- readMergedDataSets()
-#almostTidyData <- extractMeanAndStd(fullData)
+fullData <- readMergedDataSets()
+almostTidyData <- extractMeanAndStd(fullData)
 tidyData <- transformActivityFactor(almostTidyData)
 tidyData <- renameColumns(tidyData)
 sumarizedData <- generateSumarizationBySubjectAndActivity(tidyData)
